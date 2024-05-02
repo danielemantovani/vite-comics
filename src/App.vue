@@ -15,7 +15,6 @@ export default {
 </script>
 
 <template>
-<h1>Sezioni dell'applicazione</h1>
 <AppHeader />
 <AppMain />
 <AppFooter />
