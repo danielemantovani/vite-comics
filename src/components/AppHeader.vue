@@ -58,7 +58,7 @@ export default {
             </div>
             <ul class="menu">
                 <li v-for="curItem in menu">
-                    <a href="">{{ curItem.section }}</a>
+                    <a href="" :class="{active : curItem.isVisible}">{{ curItem.section }}</a>
                 </li>
             </ul>
         </div>
@@ -91,6 +91,15 @@ ul {
         margin-right: .8rem;
         font-size: 0.8rem;
         font-weight: bolder;
+
+        &:hover {
+            color: $primary-color;
+        }
+
+        &.active {
+            border-bottom: 5px solid $primary-color;
+        }
     }
+
 }
 </style>
