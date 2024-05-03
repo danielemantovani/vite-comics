@@ -95,7 +95,7 @@ ul {
         &:hover {
             color: $primary-color;
         }
-
+        
         &.active {
             border-bottom: 5px solid $primary-color;
         }
