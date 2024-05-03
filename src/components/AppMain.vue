@@ -107,9 +107,11 @@ export default {
 @use "../style/partials/mixin" as *;
 @use "../style/partials/variables" as *;
 
-main {
+.heroes {
     background-color: black;
-    display: flex;
+    .row{
+        @include flex(row, center, center, wrap);
+    }
 
 
 }
