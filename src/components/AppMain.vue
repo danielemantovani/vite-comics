@@ -108,10 +108,17 @@ export default {
 @use "../style/partials/variables" as *;
 
 .heroes {
-    background-color: black;
+    background-color: black;    
+
     .row{
         @include flex(row, center, center, wrap);
+        gap: 20px;
+        width: 70%;
+        padding: 50px 0;
+        margin: auto;
+
     }
+
 
 
 }

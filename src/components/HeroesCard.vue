@@ -20,12 +20,16 @@ export default {
 @use "../style/partials/mixin.scss" as *;
 
     .card{
+        width: 150px;
+        height: 300px;
         
         img{
-            width: 200px;
+            height: 250px;
+            
         }
         h4{
             color: white;
+            text-align: center;
         }
     }
 

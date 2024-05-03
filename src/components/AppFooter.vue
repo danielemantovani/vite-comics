@@ -39,7 +39,7 @@ export default {
         margin: auto;
         
         .right-col{
-            @include flex(row, right, center);
+            @include flex(row, right, center, wrap);
             img{
                 width: 25rem;
             }

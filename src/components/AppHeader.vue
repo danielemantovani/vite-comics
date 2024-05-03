@@ -58,7 +58,7 @@ export default {
             </div>
             <ul class="menu">
                 <li v-for="curItem in menu">
-                    <a href="" :class="{active : curItem.isVisible}">{{ curItem.section }}</a>
+                    <a href="" :class="{ active: curItem.isVisible }">{{ curItem.section }}</a>
                 </li>
             </ul>
         </div>
@@ -73,33 +73,32 @@ export default {
 @use "../style/partials/variables" as *;
 
 .header-container {
-    @include flex(row, space-between, center);
+    @include flex(row, space-between, center, wrap);
     width: 70%;
     margin: 20px auto;
-}
 
-.menu {
-    @include flex(row, center, center);
-}
-
-ul {
-    list-style-type: none;
-
-    a {
-        text-decoration: none;
-        color: black;
-        margin-right: .8rem;
-        font-size: 0.8rem;
-        font-weight: bolder;
-
-        &:hover {
-            color: $primary-color;
-        }
-        
-        &.active {
-            border-bottom: 5px solid $primary-color;
-        }
+    .menu {
+        @include flex(row, center, center, wrap);
     }
 
+    ul {
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: black;
+            margin-right: .8rem;
+            font-size: 0.8rem;
+            font-weight: bolder;
+
+            &:hover {
+                color: $primary-color;
+            }
+
+            &.active {
+                border-bottom: 5px solid $primary-color;
+            }
+        }
+    }
 }
 </style>
