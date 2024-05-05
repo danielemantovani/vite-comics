@@ -20,8 +20,6 @@ export default {
 @use "../style/partials/mixin.scss" as *;
 
     .card{
-        width: 150px;
-        height: 300px;
         
         img{
             height: 250px;

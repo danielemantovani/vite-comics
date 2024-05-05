@@ -117,9 +117,10 @@ export default {
         padding: 50px 0;
         margin: auto;
 
+        .col{
+            width: 15%;
+        }
     }
-
-
 
 }
 </style>
